@@ -1,0 +1,27 @@
+body {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: line-through;
+}
+h1 {
+    color: orange;
+    font-size: 65px;
+    font-family: sans-serif;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+ol {
+    font-style: italic;
+}
+ul {
+    background-color: bisque;
+}
+.pul {
+    color: brown;
+}
+#Yellow {color: yellow;}
+#Red {color: red}
+#Brown {color: brown}
