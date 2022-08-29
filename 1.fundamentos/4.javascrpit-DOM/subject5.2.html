@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //atividade 1 
+
+           
+      var body = document.body
+
+      var main =document.createElement("main")
+
+      var sessao = document.createElement("section")
+
+     function init() {
+
+      var title = document.createElement('h1');
+
+     var text = document.createTextNode('Exercício 5.2 - JavaScript DOM')
+
+      title.appendChild(text);
+
+      body.appendChild(title)
+
+      return body.appendChild(title)
+     }
+
+     
+     
+      //atividade 2 
+       function initMain() {
+
+
+        main.className = "main-content"
+
+        body.appendChild(main)
+
+        return body.appendChild(main)
+       }
+
+       //atividade 3
+
+       function asessao() {
+
+        
+        var sesao = document.createElement("section")
+
+        body.appendChild(main)
+
+
+        sesao.className = "center-content"
+
+        sesao.className = "right-content"
+
+
+        main.appendChild(sessao)
+
+        return main.appendChild(sessao)
+
+       }
+
+       //ativida 4
+
+       function novaTag() {
+
+        var p = document.createElement("p")
+
+        sessao.appendChild(p)
+
+
+        return sessao.appendChild(p)
+
+      }
+
+      //atividade 5
+
+      function naosei () {
+      
+        var novasessao = createElement("section")
+
+        novasessao.className = "right-content"
+
+        main.appendChild(sesao)
+
+
+        return main.appendChild(sesao)
+
+      }
+          
+      window.addEventListener("load", init)
+
+      window.addEventListener("load", initMain)
+
+      window.addEventListener("load", asessao)
+
+      window.addEventListener("load", novaTag)
+
+      window.addEventListener("load", naosei)
+      
+
+    </script>
+  </body>
+</html>
