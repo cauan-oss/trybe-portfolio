@@ -19,7 +19,7 @@ Modifique as variáveis para que respeitem o escopo onde estão declaradas;
 Modifique as concatenações para template literals.
 Copie o código abaixo: */
 
-const testingScope = (escopo) => {
+/* function testingScope (escopo) {
     if (escopo === true) {
       let ifScope =  'Não devo ser utilizada fora do meu escopo (if)';
       ifScope = `${ifScope} ' ótimo, fui utilizada no escopo !'`;
@@ -28,6 +28,21 @@ const testingScope = (escopo) => {
       const  elseScope = 'Não devo ser utilizada fora do meu escopo (else)';
       console.log(elseScope);
     }
-  }
+  } */
 
-  testingScope(true);
+ /*  testingScope(true);
+ */
+//Crie uma função que retorne um array em ordem crescente.
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+const sortOddsAndEvens = () => {
+  oddsAndEvens[0] = 2;
+  oddsAndEvens[1] = 3;
+  oddsAndEvens[2] = 4;
+  oddsAndEvens[3] = 7; 
+  oddsAndEvens[4] = 10;
+  oddsAndEvens[5] = 13;
+  return oddsAndEvens;
+};
+const sortedArray = sortOddsAndEvens();
+console.log(`Os números ${sortedArray} se encontram ordenados de forma crescente!`); // Utilizando template literals para exibir a mensagem desejada
+;
