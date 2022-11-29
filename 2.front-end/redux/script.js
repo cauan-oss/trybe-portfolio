@@ -1,5 +1,5 @@
 import { legacy_createStore as createStore } from "redux"; 
-import { composeWithDevTools } from "@redux-devtools/extension/lib/types/logOnly";
+import { composeWithDevTools } from "@redux-devtools/extension";
 //criando o action 
 const stateInitial = {count: 0};
 
@@ -17,3 +17,11 @@ const incrementButton = document.querySelector('button');
 incrementButton.addEventListener('click', () => {
    store.dispatch(action)
 });
+
+store.subscribe(() => {
+    const globalState = store.getState();
+    console.log(globalState);
+    const counterElement = document.querySelector("h2");
+    counterElement.innerHTML = globalState.count;
+    
+})
