@@ -52,6 +52,7 @@ const INITIAL_STATE = {
   }; */
 
 const reducer = (state = INITIAL_STATE, action) => {
+    console.log(action.payload)
    switch (action.type) {
     case 'NEXT_COLOR':
         return {
@@ -70,7 +71,7 @@ const reducer = (state = INITIAL_STATE, action) => {
    }
 }
 const store = Redux.createStore(reducer)
-
+const dispara = {type: 'NEXT_COLOR',  payload: 'PREVIOUS_COLOR'}
 buttonPrevious.addEventListener('click', () => {
-    store.dispacth()
+    store.dispatch(dispara)
 })
