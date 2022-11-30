@@ -71,6 +71,9 @@ const reducer = (state = INITIAL_STATE, action) => {
    }
 }
 const store = Redux.createStore(reducer)
+store.subscribe(() => {
+    idSpan.innerHTML = 
+})
 const dispara = {type: 'NEXT_COLOR',  payload: 'PREVIOUS_COLOR'}
 buttonPrevious.addEventListener('click', () => {
     store.dispatch(dispara)
