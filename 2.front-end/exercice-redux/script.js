@@ -1,4 +1,4 @@
-const buttonPrevious = document.getElementById("previous");
+ /* const buttonPrevious = document.getElementById("previous");
 const buttonNext = document.getElementById("next");
 const idSpan = document.getElementById("value")
 const INITIAL_STATE = {
@@ -6,7 +6,7 @@ const INITIAL_STATE = {
     index: 0,
   };
   
-const reduce = (state, action) => {
+const reduce = (state = INITIAL_STATE, action) => {
    switch (state) {
     case value:
         
@@ -16,17 +16,22 @@ const reduce = (state, action) => {
         state;
    }
 }
+
 const store = Redux.createStore(reduce)
 
 buttonPrevious.addEventListener("click", () => {
-    const guarda = []
-    for(let i = 0; i < INITIAL_STATE.lenght; i + 1) {
-       guarda = INITIAL_STATE[i]
-       idSpan.innerHTML = guarda
-    }
+    store.dispatch()
 })
-
 
 buttonNext.addEventListener("click", () => {
     console.log("testando")
+})  */
+const buttonPrevious = document.getElementById("previous")
+const INITIAL_STATE = {
+    colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
+    index: 0,
+  };
+
+  buttonPrevious.addEventListener("click", () => {
+    store.dispatch()
 })
