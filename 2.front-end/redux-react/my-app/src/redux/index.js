@@ -1,5 +1,5 @@
 // ./src/redux/index.js
-import { createStore } from 'redux';
+import { legacy_createStore as createStore } from 'redux';
 import { composeWithDevTools } from '@redux-devtools/extension';
 
 const INITIAL_STATE = { count: 0 };
