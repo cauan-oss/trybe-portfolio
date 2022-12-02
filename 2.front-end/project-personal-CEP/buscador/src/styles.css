@@ -5,5 +5,25 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(#3f3434, #1f5afe);
+    background: linear-gradient(#121212, #212b46);
 } 
+
+.title{
+   font-size: 85px;
+   color: rgb(5, 255, 1);
+   animation: flipTitle 2s;
+}
+
+.main{
+  color: rgb(4, 251, 0) ;
+  
+}
+
+@keyframes flipTitle {
+    from {
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}

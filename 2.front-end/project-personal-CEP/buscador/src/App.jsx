@@ -3,12 +3,12 @@ import './styles.css'
 function App() {
   return (
     <div className="container">
-      <h1 className="title">teste projeto</h1>
+      <h1 className="title">Buscador</h1>
       <div className="container-input">
         <label htmlFor="input-text">
          <input placeholder="Digite seu cep..." id="input-text" type="text" />
          <button className="button-search"> 
-         <FiSearch size={25} color='white'
+         <FiSearch size={25} color= 'light green'
          ></FiSearch>
          </button>
         </label>
