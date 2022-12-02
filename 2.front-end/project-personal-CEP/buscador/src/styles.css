@@ -15,8 +15,37 @@
 }
 
 .main{
-  color: rgb(4, 251, 0) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  width: 500px;
+  border-radius: 8px;
+  color: rgb(5, 255, 1);
   
+}
+.main h2{
+    margin:  16px 0;
+    font-size: 39px;
+}
+
+main span{
+    margin-bottom: 16px;
+    
+}
+@media (max-width: 620px) {
+    .title{
+        font-size: 60px;
+    }
+    .main h2{
+        font-size: 28px;
+    }
+
+    main{
+        width: 80%;
+        min-height: 250px;
+    }
 }
 
 @keyframes flipTitle {
@@ -26,4 +55,36 @@
     to{
         transform: rotateX(0deg);
     }
+}
+
+.container-input{
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgb(0,0,0, 0.5);
+}
+
+.container-input input{
+    background-color: transparent;
+    font-size: 20px;
+    color: #15ff00;
+}
+
+.container-input input::placeholder{
+    color: #15ff00;
+}
+
+.button-search{
+    background-color: transparent;
+    border: 0;
+    color: #15ff00;
+    padding: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.button-search:hover{
+    transform: scale(1.2);
 }
