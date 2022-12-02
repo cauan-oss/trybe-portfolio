@@ -1,7 +1,9 @@
-
 import { FiSearch } from 'react-icons/fi';
-import './styles.css'
-function App() {
+import './styles.css';
+import React from 'react';
+
+class searchEnginee extends React.Component{
+    render() {
   return (
     <div className="container">
       <h1 className="title">Buscador</h1>
@@ -23,7 +25,7 @@ function App() {
 
       </main>
     </div>
-  );
+  )};
 }
 
-export default App;
+export default searchEnginee;
