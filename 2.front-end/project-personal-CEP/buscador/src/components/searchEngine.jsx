@@ -1,8 +1,8 @@
+import { Component } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import './styles.css';
-import React from 'react';
 
-class searchEnginee extends React.Component{
+class searchEnginee extends Component{
     render() {
   return (
     <div className="container">
