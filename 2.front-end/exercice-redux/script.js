@@ -47,17 +47,14 @@ const INITIAL_STATE = {
     index: 0,
   };
 
-/* const action = {
-    type: 'INCREMENT_COUNTER'
-  }; */
+ 
 
 const reducer = (state = INITIAL_STATE, action) => {
-    console.log(action.payload)
-   switch (action.type) {
+   switch (action.type, action.payload) {
     case 'NEXT_COLOR':
         return {
             ...state, 
-            index: state.index+1
+            index: state
         }
         
     case 'PREVIOUS_COLOR': 
@@ -72,9 +69,17 @@ const reducer = (state = INITIAL_STATE, action) => {
 }
 const store = Redux.createStore(reducer)
 store.subscribe(() => {
-    idSpan.innerHTML = 
+   const cor = store.getState().index
+    idSpan.innerHTML = cor
 })
+let zero = 0;
 const dispara = {type: 'NEXT_COLOR',  payload: 'PREVIOUS_COLOR'}
 buttonPrevious.addEventListener('click', () => {
-    store.dispatch(dispara)
+    INITIAL_STATE.colors[zero]
+    zero++
+    console.log(INITIAL_STATE.colors)
+})
+
+buttonNext.addEventListener('click', () => {
+
 })
