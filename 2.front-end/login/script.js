@@ -1,10 +1,12 @@
 const butao = document.querySelector('#botao');
 const mail = document.querySelector('#login');
 const password = document.querySelector('#senha');
-const login = [];
+
 
 const salveLogin = (event) => {
     event.preventDefault();
+
+    const login =  JSON.parse(localStorage.getItem('key-login')) || []
 
     const newLogin = {
         email: mail.value,
@@ -16,7 +18,7 @@ const salveLogin = (event) => {
     mail.value = '',
     password.value = '',
     
-   console.log(login);
+   localStorage.setItem('key-login', JSON.stringify(login));
 
 }
 
