@@ -1,10 +1,12 @@
-import './App.css';
-import Cep from './components/Cep'
+import { Provider } from "react-redux";
+import "./App.css";
+import Cep from "./components/Cep";
 function App() {
-  
   return (
     <div className="App">
-      <Cep />
+      <Provider>
+        <Cep />
+      </Provider>
     </div>
   );
 }
