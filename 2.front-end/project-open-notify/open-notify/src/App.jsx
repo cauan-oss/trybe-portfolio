@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { MapContainer, tileLayer } from 'react-leaflet';
-import 'leaflet/dist/'
+import 'leaflet/dist/leaflet'
 import './App.css';
 import useFetch from './hooks/useFetch';
 

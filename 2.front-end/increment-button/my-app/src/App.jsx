@@ -1,14 +1,20 @@
-import logo from './logo.svg';
+import { connect } from 'react-redux';
 import './App.css';
+import { actionCreator } from './redux/actions';
 
-function App() {
+function App(props) {
+  const { countState, dispatch } = props;
   return (
     <div className="App">
      <h1>contador</h1>
      <p>0</p>
-     <button>Incrementar</button>
+     <button onClick={() => dispatch(actionCreator())}>Incrementar</button>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+   countState: state.count,
+})
+
+export default connect(mapStateToProps)(App);
