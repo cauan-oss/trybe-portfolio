@@ -1,4 +1,4 @@
-import { Provider } from "react-redux";
+import  Provider  from "./context/Provider";
 import "./App.css";
 import Cep from "./components/Cep";
 function App() {
