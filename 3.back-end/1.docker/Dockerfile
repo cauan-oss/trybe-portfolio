@@ -1,3 +1,2 @@
-FROM chuanwen/cowsay:latest
-ENTRYPOINT ["/user/games/cowsay"]
-CMD ["#vqv Trybe"]
+FROM httpd:2.4.54
+COPY missao_trybe.html usr/local/apache2/htdocs/
