@@ -1,0 +1,14 @@
+version: '3'
+services:
+  front-end: 
+    image: node:16-alpine
+    container_name: jordan_front_end
+    working_dir: /app #e aonde os arquivos de fato irao ser executados
+    volumes:
+      - ./front_end:/app
+    stdin_open: true #isso significa que irei trabalhar na minha maquina quanto no meu container
+    tty: true #o mesmo do stdin
+    comand: sh
+    ports:
+      -3000:3000
+    restart: on_failure #ele vai sempre restartar quando falhar 
