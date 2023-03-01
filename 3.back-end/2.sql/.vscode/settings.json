@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3333,
+            "driver": "MySQL",
+            "name": "conect to the container1",
+            "database": "sakila",
+            "username": "root",
+            "password": "12345"
+        }
+    ]
+}
