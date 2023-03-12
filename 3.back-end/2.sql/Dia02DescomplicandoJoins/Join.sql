@@ -1,0 +1,3 @@
+-- aprendendo joins 
+-- Joins serve para combinar o resultado de dois ou mais registros de tabelas em um mesmo resultado
+-- Inner Joins 
