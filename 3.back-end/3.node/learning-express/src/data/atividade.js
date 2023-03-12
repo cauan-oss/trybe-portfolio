@@ -1,4 +1,4 @@
-const activites = [
+const atividade = [
     {
     id: 1, 
     description: 'iniciar o projeto docker', 
@@ -24,5 +24,5 @@ const activites = [
         description: 'ler o conteudo dia 22.3', 
         priority: 'c', 
         status: 'a fazer', 
-    }, 
+    }
 ]
