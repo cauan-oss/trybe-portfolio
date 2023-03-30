@@ -16,5 +16,13 @@ app.post('/tasks', (req, res) => {
   console.log(taks)
 })
 
+//endpoint com variaveis
+app.get('/tasks:id', (req, res) => {
+
+    const id = req.params;
+    const taks = atividade.find()
+
+});
+
 
 module.exports = app;
