@@ -1,0 +1,3 @@
+ERRO QUE APARECEU: OCI runtime exec failed: exec failed: unable to 
+start container process: exec: "bash": executable file not found in $PATH: unknown;
+Resposta: para resolver e com o comando bash ou sh apos o comando docker exec -it name-container
