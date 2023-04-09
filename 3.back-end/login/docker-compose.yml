@@ -15,3 +15,11 @@ services:
     restart: on-failure
 
   db:
+    image: mysql:8.0
+    container_name: login_db
+    volumes:
+      - ./data-base:/var/lib/mysql
+    ports:
+      - 3306:3306
+    restart: on-failure
+    
