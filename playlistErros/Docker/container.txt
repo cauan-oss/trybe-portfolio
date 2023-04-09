@@ -1,3 +1,15 @@
-ERRO QUE APARECEU: OCI runtime exec failed: exec failed: unable to 
+1- ERRO QUE APARECEU: OCI runtime exec failed: exec failed: unable to 
 start container process: exec: "bash": executable file not found in $PATH: unknown;
 Resposta: para resolver e com o comando bash ou sh apos o comando docker exec -it name-container
+
+2-ERRO QUE APARECEU: failed to solve: failed to compute cache key: failed to calculate checksum of ref 
+moby::w0wqmng6bojynrfuged5u0cyl: "/schema.sql": not found
+Resposta: o arquivo schema.sql tem que estar na mesma pasta do docker-compose
+
+3-ERRO QUE APARECEU: Error response from daemon: driver failed programming external connectivity on endpoint 
+book-sequelize-db-1 (4c4ba797068bf5eacc7586cf7a59e70106eaf66665b90650c18d186df4c9cbfb): Error starting userland proxy: 
+listen tcp4 0.0.0.0:3306: bind: address already in use
+Resposta: abrimos um terminal fora do vsCode e executamos o seguinte comando
+sudo lsof -i:3306 e pegamos o valor que esta em PID e executamos o seguinte
+comando sudo kill <PID>
+
