@@ -1,0 +1,27 @@
+version: '3'
+services:
+  front-end:
+#para rodar o que esta no Dockerfile usamos build
+    build: front-end/
+    container_name: front_end_login
+    working_dir: /app
+    volumes:
+      - ./front-end:/app
+    stdin_open: true
+    tty: true
+    command: sh
+    ports:
+      - 3000:3000
+    restart: on-failure
+
+  db:
+    image: mysql:8.0
+    container_name: login_data_base
+    volumes:
+      - ./data_base:/var/lib/mysql
+    ports:
+     - 3306:3306 
+    restart: on-failure
+  # o container nao inicia se as variaveis de ambiente nao estiver definidas
+    environment:
+      - MYSQL_PASSWORD=password
