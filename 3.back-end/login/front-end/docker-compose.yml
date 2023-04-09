@@ -6,9 +6,10 @@ services:
     working_dir: /app
     volumes: 
     - ./front-end:/app
+# o stdin_open e tty serve para espelhar informacoes do container para maquina 
     stdin_open: true
     tty: true
-    command: bash
+    command: sh
     ports:
     - 3000:3000
     restart: on-failure
