@@ -13,5 +13,15 @@ services:
     ports:
       - 3000:3000
     restart: on-failure
+
   db:
-    
+    image: mysql:8.0
+    container_name: login_data_base
+    volumes:
+      - ./data_base:/var/lib/mysql
+    ports:
+     - 3306:3306 
+    restart: on-failure
+  # o container nao inicia se as variaveis de ambiente nao estiver definidas
+    environment:
+      - MYSQL_PASSWORD=password
